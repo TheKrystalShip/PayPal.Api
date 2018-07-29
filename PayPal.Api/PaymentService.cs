@@ -2,7 +2,7 @@
 
 using TheKrystalShip.PayPal.Api.Properties;
 
-namespace PayPal.Api
+namespace TheKrystalShip.PayPal.Api
 {
     public class PaymentService
     {

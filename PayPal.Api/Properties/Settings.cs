@@ -17,7 +17,7 @@ namespace TheKrystalShip.PayPal.Api.Properties
 
                 return _config = new ConfigurationBuilder()
                     .SetBasePath(Directory.GetCurrentDirectory())
-                    .AddJsonFile(Path.Combine("Properties", "settings.json"))
+                    .AddJsonFile(Path.Combine("Properties", "settings.json"), false, true)
                     .Build();
             }
         }
