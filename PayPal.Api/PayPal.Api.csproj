@@ -2,6 +2,33 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>TheKrystalShip.PayPal.Api</RootNamespace>
+    <AssemblyName>TheKrystalShip.PayPal.Api</AssemblyName>
+    <Authors>Heisenberg</Authors>
+    <Company>TheKrystalShip</Company>
+    <Description>Wrapper library for PayPal's API using .Net Standard 2.0</Description>
+    <Copyright>MIT</Copyright>
+    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/TheKrystalShip/PayPal.Api</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/TheKrystalShip/PayPal.Api</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageTags>PayPal</PackageTags>
+    <NeutralLanguage>en</NeutralLanguage>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Braintree" Version="4.5.0" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.6" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.1.1" />
+    <PackageReference Include="TheKrystalShip.Logging" Version="1.0.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\settings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 
 </Project>
